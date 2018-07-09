@@ -23,27 +23,22 @@
 						<th>Teléfono</th>
 						<th>Acción</th>
 					</tr>
-					<tr class="active">
-						<td>1</td>
-						<td>Mark</td>
-						<td>Otto</td>
-						<td>+569 2346543</td>
-						<td> <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-chevron-right"></span> Detalle</button></td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>Jacob</td>
-						<td>Thomton</td>
-						<td>+569 2346543</td>
-						<td> <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-chevron-right"></span> Detalle</button></td>
-					</tr>
-					<tr class="active">
-						<td>3</td>
-						<td>Larry</td>
-						<td>the Bird</td>
-						<td>+569 2346543</td>
-						<td> <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-chevron-right"></span> Detalle</button></td>
-					</tr>
+					<tbody>
+                    {% for contactos in object_list %}
+                    	<tr>
+                      <th scope="row">{{contactos.id}}</th> 
+                      <td><a href="#">{{contactos.nombre}}</a></td>
+                      <td>{{contactos.apellido}}</td>
+                      <td>{{contactos.telefono}}</td>
+                      <td>
+                        <a href="{% url 'detalle' contactos.pk %}" class="btn btn-outline-success my-2 my-sm-0" >> Ver Detalle</a>
+                      </td>
+                
+                    	{% endfor %} 
+
+
+                  	</tbody>
+
 				</thead>
 
 			</table>

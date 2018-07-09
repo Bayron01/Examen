@@ -16,3 +16,8 @@ footer p{
 body{
 	overflow-x: hidden;
 }
+
+section img{
+	width: 1400px;
+	height: 200px;
+}
