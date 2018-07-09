@@ -1,0 +1,18 @@
+header {
+	text-align: center;
+}
+
+
+footer{
+	background: #000000;
+}
+
+
+footer p{
+	color: #FFFFFF;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+body{
+	overflow-x: hidden;
+}

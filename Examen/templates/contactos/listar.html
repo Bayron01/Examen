@@ -1,0 +1,55 @@
+{% extends 'contactos/index.html' %}
+{% load staticfiles %}
+{% load bootstrap4 %}
+
+
+{% block content %}
+
+<section>
+	<div class="container">
+		<div class="col-sm-12">
+
+					
+		
+		
+			<h1>Contactos <small>ICINF</small></h1>
+
+			<table class="table table-striped">
+				<thead>
+					<tr >
+						<th>#</th>
+						<th>Nombre</th>
+						<th>Apellido</th>
+						<th>Teléfono</th>
+						<th>Acción</th>
+					</tr>
+					<tr class="active">
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>+569 2346543</td>
+						<td> <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-chevron-right"></span> Detalle</button></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thomton</td>
+						<td>+569 2346543</td>
+						<td> <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-chevron-right"></span> Detalle</button></td>
+					</tr>
+					<tr class="active">
+						<td>3</td>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>+569 2346543</td>
+						<td> <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-chevron-right"></span> Detalle</button></td>
+					</tr>
+				</thead>
+
+			</table>
+
+		</div>
+	</div>
+</section>
+
+{% endblock %}
